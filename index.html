@@ -89,10 +89,10 @@
   crossorigin="anonymous"></script>
     <script>
         var now = new Date();
-        var start = new Date('2020-06-20');
+        // var start = new Date('2020-06-20');
 
         //우리 몇 일째?
-        var timeDiff = now.getTime() - start.getTime();
+        var timeDiff = now.getTime() - now.getTime();
         var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
         $('#love').text(day + '일째');
 
