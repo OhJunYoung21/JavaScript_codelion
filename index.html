@@ -89,10 +89,10 @@
   crossorigin="anonymous"></script>
     <script>
         var now = new Date();
-        var start = new Date('2018-02-28');
+        var s_1 = new Date('2018-02-28');
 
         //우리 몇 일째?
-        var timeDiff = now.getTime() - start.getTime();
+        var timeDiff = now.getTime() - s_1.getTime();
         var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
         $('#love').text(day + '일째');
 
